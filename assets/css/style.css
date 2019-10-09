@@ -510,11 +510,15 @@ header .nav-bottom .hamburger {
   height: 50px;
 }
 
+#business .flex {
+  display: flex;
+}
+
 #business .box {
-  width: 25%;
+  /* width: 25%; */
   padding-right: 50px;
   margin-bottom: 50px;
-  float: left;
+  /* float: left; */
 }
 
 #business .box h4 {
@@ -540,19 +544,23 @@ header .nav-bottom .hamburger {
 /* media query section business */
 @media screen and (max-width: 959px) {
 
+  #business .flex {
+    flex-wrap: wrap;
+  }
+
   #business .box {
     width: 50%;
-    height: 250px;
+    /* height: 250px; */
   }
 }
 
 @media screen and (max-width: 767px) {
 
-  #business .box {
+  /* #business .box {
     width: 100%;
     float: none;
     height: auto;
-  }
+  } */
 }
 
 /* section data-centers */
