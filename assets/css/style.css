@@ -320,14 +320,20 @@ header .nav-bottom .hamburger {
   text-transform: uppercase;
 }
 
+#customers ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 #customers li {
-  display: inline-block;
-  width: calc((100% / 6) - 4px);
+  /* display: inline-block; */
+  width: calc(100% / 6);
 }
 
 #customers li img {
-  width: 80%;
-  vertical-align: middle;
+  max-width: 80%;
+  /* vertical-align: middle; */
 }
 
 #customers a {
@@ -344,14 +350,14 @@ header .nav-bottom .hamburger {
 @media screen and (max-width: 767px) {
 
   #customers li {
-    width: calc((100% / 3) - 4px);
+    width: calc(100% / 3);
   }
 }
 
 @media screen and (max-width: 479px) {
 
   #customers li {
-    width: calc((100% / 2) - 4px);
+    width: calc(100% / 2);
   }
 }
 
